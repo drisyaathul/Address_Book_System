@@ -1,26 +1,43 @@
 package com.bridgelabz;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class AddressBookMain {
 
+    ArrayList <AddressBook> contactDetails = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
+
+    public void AddNewContact(){
+
+        AddressBook newContacts = new AddressBook();
+
+        System.out.println("Enter the FirstName : ");
+        newContacts.setFirstName(scanner.nextLine());
+        System.out.println("Enter the Second Name : ");
+        newContacts.setSecondName(scanner.nextLine());
+        System.out.println("Enter the Address : ");
+        newContacts.setAddress(scanner.nextLine());
+        System.out.println("Enter the City : ");
+        newContacts.setCity(scanner.nextLine());
+        System.out.println("Enter the State : ");
+        newContacts.setState(scanner.nextLine());
+        System.out.println("Enter the Zip : ");
+        newContacts.setZip(scanner.nextLine());
+        System.out.println("Enter the Phone Number : ");
+        newContacts.setPhoneNumber(scanner.nextLine());
+        System.out.println("Enter the E-mail id : ");
+        newContacts.seteMail(scanner.nextLine());
+        contactDetails.add(newContacts);
+    }
+    public void displayDetails(){
+        System.out.println(contactDetails);
+    }
     public static void main(String[] args) {
         System.out.println("**** Welcome to ADDRESS BOOK PROGRAM ****");
 
-        AddressBook contacts = new AddressBook();
-        contacts.setFirstName("Drisya");
-        System.out.println(contacts.getFirstName());
-        contacts.setSecondName("Athul");
-        System.out.println(contacts.getSecondName());
-        contacts.setAddress("Sreyas House");
-        System.out.println(contacts.getAddress());
-        contacts.setCity("Calicut");
-        System.out.println(contacts.getCity());
-        contacts.setState("Kerala");
-        System.out.println(contacts.getState());
-        contacts.setZip("673501");
-        System.out.println(contacts.getZip());
-        contacts.setPhoneNumber("0112345250");
-        System.out.println(contacts.getPhoneNumber());
-        contacts.seteMail("drisyak809@gmail.com");
-        System.out.println(contacts.geteMail());
+        AddressBookMain person = new AddressBookMain();
+        person.AddNewContact();
+        person.displayDetails();
     }
 }
