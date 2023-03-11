@@ -62,7 +62,7 @@ public class AddressBook {
         this.eMail = eMail;
     }
     public String toString() {
-       return ("FirstName:" + firstName + " SecondName:" + secondName + " Address:" + address + " City:" + city + " State:" + state +
-               " Zip:" + zip + " PhoneNumber:" + phoneNumber + " EmailId:" + eMail);
+        return ("FirstName:" + firstName + " SecondName:" + secondName + " Address:" + address + " City:" + city + " State:" + state +
+                " Zip:" + zip + " PhoneNumber:" + phoneNumber + " EmailId:" + eMail);
     }
 }
