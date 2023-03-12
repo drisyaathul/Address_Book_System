@@ -1,6 +1,6 @@
 package com.bridgelabz;
 
-public class AddressBook {
+public class AddressBook{
     private String firstName, secondName, address, city, state, zip, phoneNumber, eMail;
 
     public void AddressBook(String firstName, String secondName, String address, String city, String state, String zip, String phoneNumber, String eMail) {
@@ -55,10 +55,10 @@ public class AddressBook {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public String geteMail() {
+    public String getEMail() {
         return eMail;
     }
-    public void seteMail(String eMail) {
+    public void setEMail(String eMail) {
         this.eMail = eMail;
     }
     public String toString() {
